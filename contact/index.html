@@ -70,13 +70,17 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Experience <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
-                        <li >
-                            <a href="../rackspace/">Rackspace</a>
-                        </li>
+                        
+<li >
+    <a href="../rackspace/">Rackspace</a>
+</li>
+
                     
-                        <li >
-                            <a href="../titan/">Titan</a>
-                        </li>
+                        
+<li >
+    <a href="../titan/">Titan</a>
+</li>
+
                     
                     </ul>
                 </li>
@@ -87,17 +91,23 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Me <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
-                        <li >
-                            <a href="../skills/">Skills</a>
-                        </li>
+                        
+<li >
+    <a href="../skills/">Skills</a>
+</li>
+
                     
-                        <li >
-                            <a href="../projects/">Projects</a>
-                        </li>
+                        
+<li >
+    <a href="../projects/">Projects</a>
+</li>
+
                     
-                        <li class="active">
-                            <a href="./">Contact Me</a>
-                        </li>
+                        
+<li class="active">
+    <a href="./">Contact Me</a>
+</li>
+
                     
                     </ul>
                 </li>
@@ -107,6 +117,11 @@
 
             <!-- Search, Navigation and Repo links -->
             <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
                 <li >
                     <a rel="next" href="../projects/">
                         <i class="fa fa-arrow-left"></i> Previous
@@ -137,12 +152,12 @@
 <h1 id="contact-me">Contact Me</h1>
 <p><img alt="blah" src="http://www.gravatar.com/avatar/2f51c45127024920634d547d378b95d1.png" /></p>
 <ul>
-<li>Blog: <a href="http://www.reversengineered.com">reversengineered.com</a></li>
+<li>Blog: <a href="https://www.reversengineered.com">www.reversengineered.com</a></li>
 <li>E-mail: antony <strong>at</strong> mes <strong>dot</strong> ser <strong>dot</strong> li</li>
 <li>Github: <a href="http://github.com/antonym">antonym</a></li>
 <li>IRC: antonym on irc.freenode.net</li>
 <li>LinkedIn: <a href="https://www.linkedin.com/in/antonym">https://www.linkedin.com/in/antonym</a></li>
-<li>Twitter: <a href="http://www.twitter.com/ajmesserli">ajmesserli</a></li>
+<li>Twitter: <a href="http://www.twitter.com/@ntonym">@ntonym</a></li>
 </ul></div>
         </div>
 
@@ -155,6 +170,33 @@
         <script src="../js/jquery-1.10.2.min.js"></script>
         <script src="../js/bootstrap-3.0.3.min.js"></script>
         <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
         <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
